@@ -1,0 +1,125 @@
+/* Google Fonts Font "Poppins" */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #5372f0;
+}
+
+.wrapper {
+  width: 605px;
+  background: #fff;
+  border-radius: 15px;
+  padding: 30px 30px 25px 30px;
+}
+
+.wrapper header {
+  font-size: 35px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.wrapper .content {
+  margin: 35px 0px;
+}
+
+.content .quote-area {
+  display: flex;
+  justify-content: center;
+}
+
+.quote-area i {
+  font-size: 15px;
+}
+
+.quote-area i:first-child {
+  margin: 3px 10px 0 0;
+}
+
+.quote-area i:last-child {
+  margin: 0 0 3px 10px;
+  display: flex;
+  align-items: flex-end;
+}
+
+.quote-area .quote {
+  font-size: 22px;
+  text-align: center;
+  word-break: break-all;
+}
+
+.content .author {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+  font-size: 18px;
+  font-style: italic;
+}
+
+.content .author span:first-child {
+  margin: -8px 5px 0 0;
+  font-family: monospace;
+}
+
+.wrapper .buttons {
+  border-top: 1px solid #ccc;
+}
+
+.buttons .features {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.features ul {
+  display: flex;
+}
+
+.features ul li {
+  list-style-type: none;
+  margin: 0 5px;
+  height: 47px;
+  width: 47px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #5372f0;
+  color: #5372f0;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.features ul li:hover {
+  color: #fff;
+  background-color: #5372f0;
+}
+
+.features button {
+  border: none;
+  outline: none;
+  color: #fff;
+  background-color: #5372f0;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 13px 22px;
+  border-radius: 30px;
+  font-style: italic;
+}
+
+.features button.loading {
+  opacity: 0.7;
+  pointer-events: none;
+}
